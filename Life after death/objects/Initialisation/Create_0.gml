@@ -24,3 +24,6 @@ global.press = 0;
 global.life = 100;
 // range attack
 global.range_attack = 0;
+// Enemies
+global.enemy_max = 500;
+global.enemy = 0;

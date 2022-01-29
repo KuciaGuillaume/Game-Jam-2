@@ -9,10 +9,11 @@ with (other) {
 		if (hp <= 0) {
 			alive = 0;
 			instance_destroy();
+			global.enemy -= 1;
 		}
 	}
 	if (global.life > 0 && alive != 0) {
-		global.life -= 0.1;
+		global.life -= 0.05;
 		Life_o.image_index = 1;
 	}
 }

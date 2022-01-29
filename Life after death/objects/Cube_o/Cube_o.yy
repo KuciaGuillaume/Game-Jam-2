@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Enemies.yy",
+    "name": "group1",
+    "path": "folders/group1.yy",
   },
   "resourceVersion": "1.0",
   "name": "Cube_o",
