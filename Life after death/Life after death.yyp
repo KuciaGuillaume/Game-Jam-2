@@ -1,6 +1,9 @@
 {
   "resources": [
+    {"id":{"name":"Ath_timer_o","path":"objects/Ath_timer_o/Ath_timer_o.yy",},"order":3,},
     {"id":{"name":"Initialisation","path":"objects/Initialisation/Initialisation.yy",},"order":0,},
+    {"id":{"name":"Ath_timerHell_s","path":"sprites/Ath_timerHell_s/Ath_timerHell_s.yy",},"order":4,},
+    {"id":{"name":"Ath_timer_s","path":"sprites/Ath_timer_s/Ath_timer_s.yy",},"order":2,},
     {"id":{"name":"Player_o","path":"objects/Player_o/Player_o.yy",},"order":0,},
     {"id":{"name":"Parallax_life1_s","path":"sprites/Parallax_life1_s/Parallax_life1_s.yy",},"order":0,},
     {"id":{"name":"Parallax_enfer2_o","path":"objects/Parallax_enfer2_o/Parallax_enfer2_o.yy",},"order":6,},
@@ -16,6 +19,7 @@
     {"id":{"name":"Parallax_enfer3_o","path":"objects/Parallax_enfer3_o/Parallax_enfer3_o.yy",},"order":7,},
     {"id":{"name":"Parallax_life3_o","path":"objects/Parallax_life3_o/Parallax_life3_o.yy",},"order":1,},
     {"id":{"name":"Parallax_enfer5_s","path":"sprites/Parallax_enfer5_s/Parallax_enfer5_s.yy",},"order":9,},
+    {"id":{"name":"Ath_timerHell_o","path":"objects/Ath_timerHell_o/Ath_timerHell_o.yy",},"order":5,},
     {"id":{"name":"Parallax_life5_o","path":"objects/Parallax_life5_o/Parallax_life5_o.yy",},"order":4,},
     {"id":{"name":"Parallax_life1_o","path":"objects/Parallax_life1_o/Parallax_life1_o.yy",},"order":0,},
     {"id":{"name":"Tilemap_s","path":"sprites/Tilemap_s/Tilemap_s.yy",},"order":1,},

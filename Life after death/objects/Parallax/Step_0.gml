@@ -39,11 +39,15 @@ if (Parallax_life5_o.x <= -1920)
 // Réinitialisation des enfers
 if (Parallax_enfer1_o.x <= -1920)
 	Parallax_enfer1_o.x = 0;
+	
 if (Parallax_enfer2_o.x <= -1920)
 	Parallax_enfer2_o.x = 0;
+	
 if (Parallax_enfer3_o.x <= -1920)
 	Parallax_enfer3_o.x = 0;
+	
 if (Parallax_enfer4_o.x <= -1920)
 	Parallax_enfer4_o.x = 0;
+	
 if (Parallax_enfer5_o.x <= -1920)
 	Parallax_enfer5_o.x = 0;

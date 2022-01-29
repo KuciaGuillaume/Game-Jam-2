@@ -5,4 +5,6 @@
 // Life After Death
 
 velocity = 90.62;
+cam_pos = 0;
+
 

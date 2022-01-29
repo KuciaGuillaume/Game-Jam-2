@@ -11,6 +11,6 @@ global.floor = 800;
 // jump
 global.jump = 0;
 // Timer
-global.timer = 20;
-
-// Supression du cursor
+global.timer = 5;
+// HELL
+global.hell = 0;
