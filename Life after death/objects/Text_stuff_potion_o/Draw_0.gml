@@ -1,0 +1,13 @@
+// GAMEJAM EPITECH
+// Nathan Catalan
+// Guillaume KUcia
+// Hugo Eschlimann
+// Life After Death
+
+//////////////////////////////////////////////////////
+/////////////////// Affichage des dammage ////////////
+//////////////////////////////////////////////////////
+
+draw_set_font(Stuff);
+draw_set_color(c_purple);
+draw_text(x, y, int64(global.potion));

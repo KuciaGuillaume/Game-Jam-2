@@ -21,10 +21,13 @@ if (x < Player_o.x) {
 if (attack == 1 && image_index >= 5) {
 	sprite_index = soldier_s;
 	attack = 0
-	global.life -= dammage;
+	if (global.life > 0)
+		global.life -= dammage;
 }
 
-if (x < -250) {
+if (x < -850) {
 	instance_destroy();
 	global.enemy -= 1;
 }
+if (global.hell == 2)
+	instance_destroy();

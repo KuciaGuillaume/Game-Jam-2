@@ -8,3 +8,4 @@ velocity = 90.62;
 cam_pos = 0;
 
 
+i = 25;

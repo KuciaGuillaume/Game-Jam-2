@@ -36,27 +36,63 @@ if (Player_o.y >= global.floor) {
 	velocity = 60.62
 	if (Player_o.y > global.floor) {
 		Player_o.y = global.floor;
-		sprite_index = Player_walk_s;
+		if (global.skin == 25)
+			sprite_index = Player_walk_s;
+		if (global.skin == 50)
+			sprite_index = Player_walk_s50;
+		if (global.skin == 75)
+			sprite_index = Player_walk_s75;
+		if (global.skin == 100)
+			sprite_index = Player_walk_s100;
 	}
 }
 
 if (keyboard_check(vk_shift) && global.hell != 1) {
 	if (global.attack != 1) {
 		global.run = 1;
-		sprite_index = Player_run_s;
+		if (global.skin == 25)
+			sprite_index = Player_run_s;
+		if (global.skin == 50)
+			sprite_index = Player_run_s50;
+		if (global.skin == 75)
+			sprite_index = Player_run_s75;
+		if (global.skin == 100)
+			sprite_index = Player_run_s100;
 	}
 } else {
 	if (global.attack != 1) {
 		global.run = 0;
-		sprite_index = Player_walk_s;
+		if (global.skin == 25)
+			sprite_index = Player_walk_s;
+		if (global.skin == 50)
+			sprite_index = Player_walk_s50;
+		if (global.skin == 75)
+			sprite_index = Player_walk_s75;
+		if (global.skin == 100)
+			sprite_index = Player_walk_s100;
 	}
 }
 
-if (sprite_index == Player_attack_s && image_index >= 9) {
-	if (global.run == 1)
-		sprite_index = Player_run_s;
-	else
-		sprite_index = Player_walk_s;
+if ((sprite_index == Player_attack_s || sprite_index == Player_attack_s50 || sprite_index == Player_attack_s75 || sprite_index == Player_attack_s100) && image_index >= 9 || (image_index >= 7 && global.skin == 50) || ((image_index >= 6 && (global.skin == 75 || global.skin == 100)))) {
+	if (global.run == 1) {
+		if (global.skin == 25)
+			sprite_index = Player_run_s;
+		if (global.skin == 50)
+			sprite_index = Player_run_s50;
+		if (global.skin == 75)
+			sprite_index = Player_run_s75;
+		if (global.skin == 100)
+			sprite_index = Player_run_s100;
+	} else {
+		if (global.skin == 25)
+			sprite_index = Player_walk_s;
+		if (global.skin == 50)
+			sprite_index = Player_walk_s50;
+		if (global.skin == 75)
+			sprite_index = Player_walk_s75;
+		if (global.skin == 100)
+			sprite_index = Player_walk_s100;
+	}
 	global.attack = 0;
 	global.range_attack = 0;
 }
@@ -74,3 +110,52 @@ if (int64(global.timer) == 0) {
 	global.hell = 1;
 	global.jump = 0;
 }
+
+if (global.dammage >= 25 && global.dammage < 50) {
+	global.skin = 25;
+}
+if (global.dammage >= 50 && global.dammage < 75) {
+	global.skin = 50;
+	if (i == 25) {
+		global.enemy_max += random_range(0, 7);
+		global.hp_max += 30;
+		global.life = global.hp_max;
+		i = 50;
+	}
+}
+if (global.dammage >= 75 && global.dammage < 100) {
+	global.skin = 75;
+	if (i == 50) {
+		global.enemy_max += random_range(0, 9);
+		global.hp_max += 60;
+		global.life = global.hp_max;
+		i = 75;
+	}
+}
+if (global.dammage >= 100) {
+	global.skin = 100;
+	if (i == 100) {
+		global.enemy_max += random_range(0, 15);
+		global.hp_max += 120;
+		global.life = global.hp_max;
+		i = 125;
+	}
+}
+
+if (i == 125) {
+	global.enemy_max += random_range(0, 20);
+	global.life = global.hp_max;
+	i = 150;
+}
+if (i == 150) {
+	global.enemy_max += random_range(0, 40);
+	global.life = global.hp_max;
+	i = 175;
+}
+if (i == 175) {
+	global.enemy_max += random_range(0, 60);
+	global.life = global.hp_max;
+	i = 200;
+}
+
+

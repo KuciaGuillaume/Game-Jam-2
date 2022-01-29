@@ -10,6 +10,7 @@
 // seconds = ceil(delta_time / 100000);
 
 draw_set_font(Timer);
+draw_set_color(c_white);
 if (int64(global.timer) >= 10)
 	draw_text(x, y, int64(global.timer));
 else {

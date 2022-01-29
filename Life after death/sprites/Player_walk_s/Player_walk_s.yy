@@ -129,8 +129,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Player/Sprites.yy",
+    "name": "25",
+    "path": "folders/Player/Sprites/25.yy",
   },
   "resourceVersion": "1.0",
   "name": "Player_walk_s",

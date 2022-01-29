@@ -13,7 +13,7 @@ if (Player_o.image_xscale > 0) {
 }
 
 
-image_xscale = (global.life * 0.788) / 100;
+image_xscale = (global.life * 0.788) / global.hp_max;
 if (global.hell == 2 && global.life > 20)
 	global.life -= 0.01;
 
