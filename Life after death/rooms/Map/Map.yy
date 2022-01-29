@@ -181,7 +181,7 @@
   },
   "parent": {
     "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "path": "folders/Player/Sprites/Rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "Map",
