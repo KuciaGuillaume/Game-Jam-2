@@ -14,11 +14,11 @@ Parallax_life3_o.x -= 3.25;
 Parallax_life4_o.x -= 3.75;
 Parallax_life5_o.x -= 5.25;
 
-Parallax_enfer1_o.x -= 2.25;
-Parallax_enfer2_o.x -= 2.75;
-Parallax_enfer3_o.x -= 3.25;
-Parallax_enfer4_o.x -= 3.75;
-Parallax_enfer5_o.x -= 5.25;
+Parallax_enfer1_o.x -= 1.25;
+Parallax_enfer2_o.x -= 1.75;
+Parallax_enfer3_o.x -= 2.25;
+Parallax_enfer4_o.x -= 2.75;
+Parallax_enfer5_o.x -= 4.25;
 Tilemap_pos -= 5.25;
 
 // Déplacement de la tilemap

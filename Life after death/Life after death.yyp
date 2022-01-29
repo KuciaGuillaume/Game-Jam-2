@@ -7,6 +7,7 @@
     {"id":{"name":"Parallax_enfer3_s","path":"sprites/Parallax_enfer3_s/Parallax_enfer3_s.yy",},"order":7,},
     {"id":{"name":"Parallax_enfer4_s","path":"sprites/Parallax_enfer4_s/Parallax_enfer4_s.yy",},"order":8,},
     {"id":{"name":"Parallax_enfer1_o","path":"objects/Parallax_enfer1_o/Parallax_enfer1_o.yy",},"order":5,},
+    {"id":{"name":"Timer_o","path":"objects/Timer_o/Timer_o.yy",},"order":0,},
     {"id":{"name":"Parallax_life4_o","path":"objects/Parallax_life4_o/Parallax_life4_o.yy",},"order":3,},
     {"id":{"name":"Parallax_enfer4_o","path":"objects/Parallax_enfer4_o/Parallax_enfer4_o.yy",},"order":8,},
     {"id":{"name":"Parallax_enfer1_s","path":"sprites/Parallax_enfer1_s/Parallax_enfer1_s.yy",},"order":5,},
@@ -27,6 +28,7 @@
     {"id":{"name":"Parallax_enfer2_s","path":"sprites/Parallax_enfer2_s/Parallax_enfer2_s.yy",},"order":6,},
     {"id":{"name":"Player_s","path":"sprites/Player_s/Player_s.yy",},"order":0,},
     {"id":{"name":"Tilemap1_t","path":"tilesets/Tilemap1_t/Tilemap1_t.yy",},"order":0,},
+    {"id":{"name":"Timer","path":"fonts/Timer/Timer.yy",},"order":1,},
     {"id":{"name":"Tilemap_objects_s","path":"sprites/Tilemap_objects_s/Tilemap_objects_s.yy",},"order":2,},
     {"id":{"name":"Map","path":"rooms/Map/Map.yy",},"order":0,},
   ],
@@ -55,6 +57,7 @@
     {"folderPath":"folders/Player/Objects.yy","order":2,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Global.yy","order":13,"resourceVersion":"1.0","name":"Global","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Background/Tilemap.yy","order":4,"resourceVersion":"1.0","name":"Tilemap","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Text.yy","order":14,"resourceVersion":"1.0","name":"Text","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

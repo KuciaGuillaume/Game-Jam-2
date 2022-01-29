@@ -6,8 +6,11 @@
 
 // Initialisation des global variables
 
-
 // sol
 global.floor = 800;
 // jump
 global.jump = 0;
+// Timer
+global.timer = 20;
+
+// Supression du cursor
