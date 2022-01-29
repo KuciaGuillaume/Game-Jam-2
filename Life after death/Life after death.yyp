@@ -8,6 +8,7 @@
     {"id":{"name":"Ath_timer_s","path":"sprites/Ath_timer_s/Ath_timer_s.yy",},"order":2,},
     {"id":{"name":"Player_attack_s","path":"sprites/Player_attack_s/Player_attack_s.yy",},"order":4,},
     {"id":{"name":"Player_o","path":"objects/Player_o/Player_o.yy",},"order":0,},
+    {"id":{"name":"Enemies_spawn","path":"objects/Enemies_spawn/Enemies_spawn.yy",},"order":2,},
     {"id":{"name":"Parallax_life1_s","path":"sprites/Parallax_life1_s/Parallax_life1_s.yy",},"order":0,},
     {"id":{"name":"Parallax_enfer2_o","path":"objects/Parallax_enfer2_o/Parallax_enfer2_o.yy",},"order":6,},
     {"id":{"name":"Parallax_enfer3_s","path":"sprites/Parallax_enfer3_s/Parallax_enfer3_s.yy",},"order":7,},

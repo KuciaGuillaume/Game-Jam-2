@@ -58,6 +58,7 @@ if (sprite_index == Player_attack_s && image_index >= 9) {
 	else
 		sprite_index = Player_walk_s;
 	global.attack = 0;
+	global.range_attack = 0;
 }
 
 if (global.hell == 0) {

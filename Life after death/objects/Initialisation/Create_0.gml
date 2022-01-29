@@ -22,3 +22,5 @@ global.attack = 0;
 global.press = 0;
 // Life
 global.life = 100;
+// range attack
+global.range_attack = 0;
