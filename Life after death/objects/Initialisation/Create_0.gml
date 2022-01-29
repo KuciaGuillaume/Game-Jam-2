@@ -11,7 +11,7 @@ global.floor = 800;
 // jump
 global.jump = 0;
 // Timer
-global.timer = 60;
+global.timer = 800;
 // HELL
 global.hell = 0;
 // run 
