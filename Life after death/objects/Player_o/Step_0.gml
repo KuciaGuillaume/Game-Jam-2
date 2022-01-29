@@ -39,8 +39,23 @@ if (Player_o.y >= global.floor) {
 	}
 }
 
+if (keyboard_check(vk_shift)) {
+	if (global.attack != 1) {
+		global.run = 1;
+		sprite_index = Player_run_s;
+	}
+} else {
+	if (global.attack != 1) {
+		global.run = 0;
+		sprite_index = Player_walk_s;
+	}
+}
+
 if (sprite_index == Player_attack_s && image_index >= 9) {
-	sprite_index = Player_run_s;
+	if (global.run == 1)
+		sprite_index = Player_run_s;
+	else
+		sprite_index = Player_walk_s;
 	global.attack = 0;
 }
 

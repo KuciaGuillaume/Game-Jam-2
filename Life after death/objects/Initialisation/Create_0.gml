@@ -20,3 +20,5 @@ global.run = 0;
 global.attack = 0;
 // press
 global.press = 0;
+// Life
+global.life = 100;
