@@ -51,3 +51,7 @@ if (Parallax_enfer4_o.x <= -1920)
 	
 if (Parallax_enfer5_o.x <= -1920)
 	Parallax_enfer5_o.x = 0;
+	
+// Déplacement du coffre si il y a coffre
+if (global.chest != 0)
+	Chest_o.x -= 5.25;

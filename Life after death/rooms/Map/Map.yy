@@ -18,6 +18,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"Timer_o","path":"objects/Timer_o/Timer_o.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.06794739,"scaleY":2.6875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1684.0,"y":33.0,"resourceVersion":"1.0","name":"inst_1BB8C588","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Ath_timerHell_o","path":"objects/Ath_timerHell_o/Ath_timerHell_o.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1589.0,"y":1101.0,"resourceVersion":"1.0","name":"inst_2EB129E4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Enemies_spawn","path":"objects/Enemies_spawn/Enemies_spawn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":10.8125,"scaleY":12.4375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-189.0,"y":364.0,"resourceVersion":"1.0","name":"inst_399FF08C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Chest_spawner","path":"objects/Chest_spawner/Chest_spawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.0,"scaleY":9.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-192.0,"y":608.0,"resourceVersion":"1.0","name":"inst_116F3FEE","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Other","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"Parallax_life5_o","path":"objects/Parallax_life5_o/Parallax_life5_o.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_3BEE8C62","tags":[],"resourceType":"GMRInstance",},
@@ -155,6 +156,7 @@
     {"name":"inst_3C47BF02","path":"rooms/Map/Map.yy",},
     {"name":"inst_2F81247C","path":"rooms/Map/Map.yy",},
     {"name":"inst_399FF08C","path":"rooms/Map/Map.yy",},
+    {"name":"inst_116F3FEE","path":"rooms/Map/Map.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -11,7 +11,7 @@ global.floor = 800;
 // jump
 global.jump = 0;
 // Timer
-global.timer = 120;
+global.timer = 60;
 // HELL
 global.hell = 0;
 // run 
@@ -27,3 +27,5 @@ global.range_attack = 0;
 // Enemies
 global.enemy_max = 4;
 global.enemy = 0;
+// chest
+global.chest = 0;
