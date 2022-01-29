@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "soldier_s",
+    "path": "sprites/soldier_s/soldier_s.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -16,10 +19,16 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":50.0,"y":0.0,},
+    {"x":50.0,"y":50.0,},
+    {"x":0.0,"y":50.0,},
+  ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Player_o","path":"objects/Player_o/Player_o.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -28,7 +37,7 @@
     "path": "folders/Enemny.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Enemies_spawn",
+  "name": "soldier_o",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,4 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-i = 0;
+if (attack != 1) {
+	attack = 1;
+	sprite_index = soldier_attack_s;
+}
