@@ -28,13 +28,20 @@ if (global.hell == 1 && cam_pos < 1080) {
 // jump et double jump
 if (global.jump == 1 || global.jump == 2) {
 	Player_o.y -= velocity;
-	velocity -= 7.81;
+	velocity -= 1.81;
 }
 if (Player_o.y >= global.floor) {
 	global.jump = 0;
-	velocity = 90.62
-	if (Player_o.y > global.floor)
+	velocity = 60.62
+	if (Player_o.y > global.floor) {
 		Player_o.y = global.floor;
+		sprite_index = Player_walk_s;
+	}
+}
+
+if (sprite_index == Player_attack_s && image_index >= 9) {
+	sprite_index = Player_run_s;
+	global.attack = 0;
 }
 
 // Déscente au enfer

@@ -22,7 +22,14 @@ if (global.timer > 0)
 	global.timer -= seconds;
 if (global.hell == 2 && int64(global.timer) < 100 && i == 0) {
 	Timer_o.x += 15;
-	i = 1
+	i = 1;
+}
+if (global.hell != 2 && int64(global.timer) > 100 && e == 0) {
+	Timer_o.x -= 15;
+	e = 1;
+} else if (e == 1 && int64(global.timer) < 100) {
+	Timer_o.x += 15;
+	e = 2;
 }
 
 

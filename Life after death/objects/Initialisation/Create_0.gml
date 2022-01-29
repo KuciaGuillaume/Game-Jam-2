@@ -11,6 +11,12 @@ global.floor = 800;
 // jump
 global.jump = 0;
 // Timer
-global.timer = 5;
+global.timer = 60;
 // HELL
 global.hell = 0;
+// run 
+global.run = 0;
+// attack
+global.attack = 0;
+// press
+global.press = 0;
