@@ -24,6 +24,10 @@ if (global.hell == 1 && cam_pos <= 1080) {
 	cam_pos += 9.81;
 } else if (cam_pos >= 1080) {
 	global.hell = 2;
+	if (h == 0) {
+		global.enemy_max += 20;
+		h = 1;
+	}
 }
 	
 // jump et double jump
@@ -104,7 +108,7 @@ if (global.hell == 0) {
 // Déscente au enfer
 if (int64(global.timer) == 0) {
 	global.floor += 1080;
-	global.timer = 105;
+	global.timer = random_range(15, 30);
 	Timer_o.y += 1070;
 	Timer_o.x -= 15;
 	global.hell = 1;
@@ -129,6 +133,10 @@ if (global.dammage >= 75 && global.dammage < 100) {
 		global.enemy_max += random_range(0, 9);
 		global.hp_max += 60;
 		global.life = global.hp_max;
+		global.wolfhp += 50;
+		global.skeletonhp += 50;
+		global.wolfdammage += 4
+		global.skeletondammage += 5;
 		i = 75;
 	}
 }
@@ -138,6 +146,10 @@ if (global.dammage >= 100) {
 		global.enemy_max += random_range(0, 15);
 		global.hp_max += 120;
 		global.life = global.hp_max;
+		global.wolfhp += 100;
+		global.skeletonhp += 100;
+		global.wolfdammage += 6
+		global.skeletondammage += 10;
 		i = 125;
 	}
 }

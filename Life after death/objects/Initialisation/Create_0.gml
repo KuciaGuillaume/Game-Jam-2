@@ -37,4 +37,11 @@ global.e = 0;
 global.potion = 0;
 //
 global.skin = 25;
+// gestion enfer
+global.wolfs = 0;
+global.skeleton = 0;
 //
+global.wolfhp = 50;
+global.skeletonhp = 100;
+global.wolfdammage = 2;
+global.skeletondammage = 10;

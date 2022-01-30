@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemny",
-    "path": "folders/Enemny.yy",
+    "name": "Earth",
+    "path": "folders/Enemny/Earth.yy",
   },
   "resourceVersion": "1.0",
   "name": "soldier_s",

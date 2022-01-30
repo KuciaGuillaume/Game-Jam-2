@@ -25,9 +25,7 @@ if (attack == 1 && image_index >= 5) {
 		global.life -= dammage;
 }
 
-if (x < -850) {
+if (x < -850 || global.hell == 2) {
 	instance_destroy();
 	global.enemy -= 1;
 }
-if (global.hell == 2)
-	instance_destroy();
