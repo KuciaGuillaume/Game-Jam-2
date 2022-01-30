@@ -127,6 +127,7 @@ if (int64(global.timer) == 0 && global.hell != 2) {
 	Timer_o.y += 1070;
 	global.hell = 1;
 	global.jump = 0;
+	audio_play_sound(Drop_in_hell_m, 1, 0);
 } else if (int64(global.timer) <= 0 && global.hell == 2) {
 	global.timer = random_range(30, 60);
 	global.hell = 3;
@@ -161,7 +162,7 @@ if (global.dammage >= 75 && global.dammage < 100) {
 if (global.dammage >= 125) {
 	global.skin = 100;
 	if (i == 75) {
-		global.enemy_max += random_range(0, 3);
+		global.enemy_max += random_range(15, 20);
 		global.hp_max += 120;
 		global.life = global.hp_max;
 		global.wolfhp += 100;
@@ -170,22 +171,6 @@ if (global.dammage >= 125) {
 		global.skeletondammage += 10;
 		i = 100;
 	}
-}
-
-if (global.dammage >= 150 && i == 100) {
-	global.enemy_max += random_range(0, 3);
-	global.life = global.hp_max;
-	i = 125;
-}
-if (global.dammage >= 175 && i == 125) {
-	global.enemy_max += random_range(0, 03);
-	global.life = global.hp_max;
-	i = 150;
-}
-if (global.dammage >= 200 && 150) {
-	global.enemy_max += random_range(0, 03);
-	global.life = global.hp_max;
-	i = 175;
 }
 
 if (global.life <= 0 && alive == 1) {
@@ -220,18 +205,24 @@ if (alive == 1)
 else {
 	Noir_o.visible = true;
 	Noir_o.image_alpha += 0.005;
-	if (Noir_o.image_alpha >= 1)
+	if (Noir_o.image_alpha >= 1) {
+		audio_stop_sound(Sound_in_earth_m);
 		room = Menu;
+	}
 }
 
 if (mouse_check_button_pressed(mb_left)) {
 	if (global.attack != 1 && global.jump == 0 && global.hell != 1 && alive == 1) {
-		if (global.skin == 25)
+		if (global.skin == 25) {
 			sprite_index = Player_attack_s;
+			audio_play_sound(Attack_25_m, 1, 0);
+		}
 		if (global.skin == 50)
 			sprite_index = Player_attack_s50;
-		if (global.skin == 75)
+		if (global.skin == 75) {
 			sprite_index = Player_attack_s75;
+			audio_play_sound(Attack_75_m, 1, 0);
+		}
 		if (global.skin == 100)
 			sprite_index = Player_attack_s100;
 		image_index = 0;

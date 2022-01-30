@@ -10,5 +10,7 @@ if (mouse_check_button(mb_left) && (mouse_y >= y && mouse_y <= y + sprite_height
 x_vol = (x - x_min);
 x_volume = (x_vol * 100) / (x_max - x_min);
 audio_sound_gain(Menu_m, x_volume / 100, 0);
+audio_sound_gain(Sound_in_earth_m, x_volume / 100, 0);
+audio_sound_gain(Sound_in_hell_m, x_volume / 100, 0);
 if (x < x_min)
 	x = x_min + 1;

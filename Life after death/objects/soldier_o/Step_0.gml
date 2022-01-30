@@ -20,7 +20,11 @@ if (x < Player_o.x) {
 
 if (attack == 1 && image_index >= 5) {
 	sprite_index = soldier_s;
-	attack = 0
+	attack = 0;
+	if (e <= 0) {
+		audio_play_sound(Goblin_attack_m, 1, 0);
+		e = 1;
+	}
 	if (global.life > 0 && global.ghostmod != 1)
 		global.life -= dammage;
 }

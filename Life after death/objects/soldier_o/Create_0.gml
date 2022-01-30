@@ -8,3 +8,4 @@ dir = 0;
 rapidity = random_range(7.25, 10.25);
 dammage = random_range(0.1, 0.5);
 attack = 0;
+e = 0;

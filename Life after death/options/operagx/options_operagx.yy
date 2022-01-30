@@ -1,5 +1,5 @@
 {
-  "option_operagx_version": "1.0.0.0",
+  "option_operagx_version": "0.0.1.7",
   "option_operagx_next_version": "1.0.0.0",
   "option_operagx_game_name": "${project_name}",
   "option_operagx_interpolate_pixels": true,

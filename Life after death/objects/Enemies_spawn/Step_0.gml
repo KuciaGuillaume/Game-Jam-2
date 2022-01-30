@@ -27,6 +27,7 @@ if (global.hell != 0 && global.hell != 3 && global.enemy < global.enemy_max && g
 if (global.enemy < global.enemy_max && global.hell == 2 && global.wolfs < wolfs_max && global.hell != 0 && global.hell != 3) {
 	global.enemy += 1;
 	global.wolfs += 1;
+	audio_play_sound(Wolf_arrived, 1, 0);
 	instance_create_layer(random_range(1920, 9600), global.floor - 20, "Enemies", Wolf_o);
 	if (i2 == 0) {
 		Wolf_o.image_xscale *= (-1);

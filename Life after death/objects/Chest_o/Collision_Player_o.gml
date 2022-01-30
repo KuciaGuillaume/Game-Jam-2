@@ -6,6 +6,7 @@ if (chest_closed == 1 && keyboard_check_pressed(ord("E"))) {
 	image_index = 0;
 	image_speed = 1;
 	global.e = 1;
+	audio_play_sound(Chest_m, 1, 0);
 
 	n1 = random_range(1, 100);
 	show_debug_message(n1);
