@@ -3,5 +3,5 @@
 
 if (global.potion != 0) {
 	global.potion -= 1;
-	global.life += 50;
+	global.life += (global.hp_max / 2);
 }

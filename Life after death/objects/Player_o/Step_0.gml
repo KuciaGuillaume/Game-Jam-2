@@ -36,6 +36,9 @@ if (global.hell == 3 && cam_pos >= 0) {
 	global.floor -= 9.81;
 } else if (cam_pos <= 0 && global.hell == 3) {
 	global.hell = 0;
+	global.attack = 0;
+	global.run = 0;
+	global.jump = 0;
 	global.enemy_max -= 20;
 	global.floor = 800;
 	cam_pos = 0;
@@ -122,7 +125,6 @@ if (int64(global.timer) == 0 && global.hell != 2) {
 	global.floor += 1080;
 	global.timer = random_range(15, 30);
 	Timer_o.y += 1070;
-	Timer_o.x -= 15;
 	global.hell = 1;
 	global.jump = 0;
 } else if (int64(global.timer) <= 0 && global.hell == 2) {
@@ -146,7 +148,7 @@ if (global.dammage >= 50 && global.dammage < 75) {
 if (global.dammage >= 75 && global.dammage < 100) {
 	global.skin = 75;
 	if (i == 50) {
-		global.enemy_max += random_range(0, 9);
+		global.enemy_max += random_range(0, 5);
 		global.hp_max += 60;
 		global.life = global.hp_max;
 		global.wolfhp += 25;
@@ -156,10 +158,10 @@ if (global.dammage >= 75 && global.dammage < 100) {
 		i = 75;
 	}
 }
-if (global.dammage >= 100) {
+if (global.dammage >= 125) {
 	global.skin = 100;
 	if (i == 75) {
-		global.enemy_max += random_range(0, 15);
+		global.enemy_max += random_range(0, 3);
 		global.hp_max += 120;
 		global.life = global.hp_max;
 		global.wolfhp += 100;
@@ -170,18 +172,18 @@ if (global.dammage >= 100) {
 	}
 }
 
-if (global.dammage >= 125 && i == 100) {
-	global.enemy_max += random_range(0, 20);
+if (global.dammage >= 150 && i == 100) {
+	global.enemy_max += random_range(0, 3);
 	global.life = global.hp_max;
 	i = 125;
 }
-if (global.dammage >= 150 && i == 125) {
-	global.enemy_max += random_range(0, 40);
+if (global.dammage >= 175 && i == 125) {
+	global.enemy_max += random_range(0, 03);
 	global.life = global.hp_max;
 	i = 150;
 }
-if (global.dammage >= 175 && 150) {
-	global.enemy_max += random_range(0, 60);
+if (global.dammage >= 200 && 150) {
+	global.enemy_max += random_range(0, 03);
 	global.life = global.hp_max;
 	i = 175;
 }

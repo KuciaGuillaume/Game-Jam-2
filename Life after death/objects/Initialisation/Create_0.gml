@@ -12,7 +12,7 @@ global.floor = 800;
 // jump
 global.jump = 0;
 // Timer
-global.timer = random_range(30, 60);
+global.timer = random_range(40, 60);
 // HELL
 global.hell = 0;
 // run 
