@@ -43,5 +43,5 @@ global.skeleton = 0;
 //
 global.wolfhp = 50;
 global.skeletonhp = 100;
-global.wolfdammage = 2;
+global.wolfdammage = 0.2;
 global.skeletondammage = 10;

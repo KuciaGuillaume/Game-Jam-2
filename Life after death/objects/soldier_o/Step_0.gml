@@ -26,6 +26,6 @@ if (attack == 1 && image_index >= 5) {
 }
 
 if (x < -850 || global.hell == 2) {
-	instance_destroy();
 	global.enemy -= 1;
+	instance_destroy();
 }

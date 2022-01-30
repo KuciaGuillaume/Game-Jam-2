@@ -33,8 +33,8 @@ if (attack == 2) {
 	}
 }
 
-if (x < -850) {
-	instance_destroy();
+if (x < -850 || global.hell == 0) {
 	global.enemy -= 8;
 	global.skeleton -= 8;
+	instance_destroy();
 }

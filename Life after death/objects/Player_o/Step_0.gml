@@ -22,12 +22,24 @@ if (Player_o.y < global.floor) {
 if (global.hell == 1 && cam_pos <= 1080) {
 	camera_set_view_pos(view_camera[0], 0, cam_pos);
 	cam_pos += 9.81;
-} else if (cam_pos >= 1080) {
+} else if (cam_pos >= 1080 && global.hell != 3) {
 	global.hell = 2;
 	if (h == 0) {
 		global.enemy_max += 20;
 		h = 1;
 	}
+}
+
+if (global.hell == 3 && cam_pos >= 0) {
+	camera_set_view_pos(view_camera[0], 0, cam_pos);
+	cam_pos -= 9.81;
+	global.floor -= 9.81;
+} else if (cam_pos <= 0 && global.hell == 3) {
+	global.hell = 0;
+	global.enemy_max -= 20;
+	global.floor = 800;
+	cam_pos = 0;
+	h = 0;
 }
 	
 // jump et double jump
@@ -106,13 +118,17 @@ if (global.hell == 0) {
 }
 
 // Déscente au enfer
-if (int64(global.timer) == 0) {
+if (int64(global.timer) == 0 && global.hell != 2) {
 	global.floor += 1080;
 	global.timer = random_range(15, 30);
 	Timer_o.y += 1070;
 	Timer_o.x -= 15;
 	global.hell = 1;
 	global.jump = 0;
+} else if (int64(global.timer) <= 0 && global.hell == 2) {
+	global.timer = random_range(30, 60);
+	global.hell = 3;
+	Timer_o.y -= 1070;
 }
 
 if (global.dammage >= 25 && global.dammage < 50) {
@@ -133,9 +149,9 @@ if (global.dammage >= 75 && global.dammage < 100) {
 		global.enemy_max += random_range(0, 9);
 		global.hp_max += 60;
 		global.life = global.hp_max;
-		global.wolfhp += 50;
-		global.skeletonhp += 50;
-		global.wolfdammage += 4
+		global.wolfhp += 25;
+		global.skeletonhp += 25;
+		global.wolfdammage += 0.3;
 		global.skeletondammage += 5;
 		i = 75;
 	}
@@ -148,26 +164,26 @@ if (global.dammage >= 100) {
 		global.life = global.hp_max;
 		global.wolfhp += 100;
 		global.skeletonhp += 100;
-		global.wolfdammage += 6
+		global.wolfdammage += 0.3;
 		global.skeletondammage += 10;
 		i = 125;
 	}
 }
 
-if (i == 125) {
-	global.enemy_max += random_range(0, 20);
-	global.life = global.hp_max;
-	i = 150;
-}
 if (i == 150) {
-	global.enemy_max += random_range(0, 40);
+	global.enemy_max += random_range(0, 20);
 	global.life = global.hp_max;
 	i = 175;
 }
-if (i == 175) {
+if (i == 200) {
+	global.enemy_max += random_range(0, 40);
+	global.life = global.hp_max;
+	i = 225;
+}
+if (i == 250) {
 	global.enemy_max += random_range(0, 60);
 	global.life = global.hp_max;
-	i = 200;
+	i = 275;
 }
 
 
