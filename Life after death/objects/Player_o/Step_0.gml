@@ -53,7 +53,7 @@ if (global.jump == 1 || global.jump == 2) {
 if (Player_o.y >= global.floor) {
 	global.jump = 0;
 	velocity = 60.62
-	if (Player_o.y > global.floor) {
+	if (Player_o.y > global.floor && alive == 1) {
 		Player_o.y = global.floor;
 		if (global.skin == 25)
 			sprite_index = Player_walk_s;
@@ -66,7 +66,7 @@ if (Player_o.y >= global.floor) {
 	}
 }
 
-if (keyboard_check(vk_shift) && global.hell != 1) {
+if (keyboard_check(vk_shift) && global.hell != 1 && alive == 1) {
 	if (global.attack != 1) {
 		global.run = 1;
 		if (global.skin == 25)
@@ -79,7 +79,7 @@ if (keyboard_check(vk_shift) && global.hell != 1) {
 			sprite_index = Player_run_s100;
 	}
 } else {
-	if (global.attack != 1) {
+	if (global.attack != 1 && alive == 1) {
 		global.run = 0;
 		if (global.skin == 25)
 			sprite_index = Player_walk_s;
@@ -92,7 +92,7 @@ if (keyboard_check(vk_shift) && global.hell != 1) {
 	}
 }
 
-if ((sprite_index == Player_attack_s || sprite_index == Player_attack_s50 || sprite_index == Player_attack_s75 || sprite_index == Player_attack_s100) && image_index >= 9 || (image_index >= 7 && global.skin == 50) || ((image_index >= 6 && (global.skin == 75 || global.skin == 100)))) {
+if (alive == 1 && (sprite_index == Player_attack_s || sprite_index == Player_attack_s50 || sprite_index == Player_attack_s75 || sprite_index == Player_attack_s100) && image_index >= 9 || (image_index >= 7 && global.skin == 50) || ((image_index >= 6 && (global.skin == 75 || global.skin == 100)))) {
 	if (global.run == 1) {
 		if (global.skin == 25)
 			sprite_index = Player_run_s;
@@ -186,6 +186,42 @@ if (global.dammage >= 200 && 150) {
 	global.enemy_max += random_range(0, 03);
 	global.life = global.hp_max;
 	i = 175;
+}
+
+if (global.life <= 0 && alive == 1) {
+	global.attack = 0;
+	global.run = 0;
+	global.jump = 0;
+	if (global.skin == 25)
+		sprite_index = Player_death_s;
+	if (global.skin == 50)
+		sprite_index = Player_death_s50;
+	if (global.skin == 75) {
+		sprite_index = Player_death_s75;
+		global.floor += 20;
+	}
+	if (global.skin == 100) {
+		sprite_index = Player_death_s100;
+		global.floor += 20;
+	}
+	image_index = 0;
+	alive = 0;
+}
+if (alive == 0 && global.skin == 25 && image_index >= 9)
+	image_speed = 0;
+if (alive == 0 && global.skin == 50 && image_index >= 6)
+	image_speed = 0;
+if (alive == 0 && global.skin == 75 && image_index >= 5)
+	image_speed = 0;
+if (alive == 0 && global.skin == 100 && image_index >= 5)
+	image_speed = 0;
+if (alive == 1)
+	Noir_o.visible = false;
+else {
+	Noir_o.visible = true;
+	Noir_o.image_alpha += 0.005;
+	if (Noir_o.image_alpha >= 1)
+		room = Menu;
 }
 
 

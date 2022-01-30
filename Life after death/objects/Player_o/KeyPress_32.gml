@@ -5,7 +5,7 @@
 // Life After Death
 
 // Saut du personnage 
-if (global.attack != 1) {
+if (global.attack != 1 && alive == 1) {
 	if (global.jump == 0  && global.hell != 1) {
 		global.jump = 1;
 	if (global.skin == 25)

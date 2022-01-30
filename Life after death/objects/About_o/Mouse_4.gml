@@ -16,3 +16,4 @@ if (About_oo.visible == true) {
 	Nathan_o.visible = true;
 	audio_play_sound(about_m, 1, false);
 }
+

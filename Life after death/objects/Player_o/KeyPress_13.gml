@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (global.attack != 1 && global.jump == 0 && global.hell != 1) {
+if (global.attack != 1 && global.jump == 0 && global.hell != 1 && alive == 1) {
 	if (global.skin == 25)
 		sprite_index = Player_attack_s;
 	if (global.skin == 50)

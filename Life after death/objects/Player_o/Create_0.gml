@@ -6,6 +6,7 @@
 
 velocity = 90.62;
 cam_pos = 0;
+alive = 1;
 
 
 i = 25;
