@@ -158,7 +158,7 @@ if (global.dammage >= 75 && global.dammage < 100) {
 }
 if (global.dammage >= 100) {
 	global.skin = 100;
-	if (i == 100) {
+	if (i == 75) {
 		global.enemy_max += random_range(0, 15);
 		global.hp_max += 120;
 		global.life = global.hp_max;
@@ -166,24 +166,24 @@ if (global.dammage >= 100) {
 		global.skeletonhp += 100;
 		global.wolfdammage += 0.3;
 		global.skeletondammage += 10;
-		i = 125;
+		i = 100;
 	}
 }
 
-if (i == 150) {
+if (global.dammage >= 125 && i == 100) {
 	global.enemy_max += random_range(0, 20);
 	global.life = global.hp_max;
-	i = 175;
+	i = 125;
 }
-if (i == 200) {
+if (global.dammage >= 150 && i == 125) {
 	global.enemy_max += random_range(0, 40);
 	global.life = global.hp_max;
-	i = 225;
+	i = 150;
 }
-if (i == 250) {
+if (global.dammage >= 175 && 150) {
 	global.enemy_max += random_range(0, 60);
 	global.life = global.hp_max;
-	i = 275;
+	i = 175;
 }
 
 
