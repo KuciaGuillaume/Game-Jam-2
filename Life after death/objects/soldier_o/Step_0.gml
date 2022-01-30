@@ -21,7 +21,7 @@ if (x < Player_o.x) {
 if (attack == 1 && image_index >= 5) {
 	sprite_index = soldier_s;
 	attack = 0
-	if (global.life > 0)
+	if (global.life > 0 && global.ghostmod != 1)
 		global.life -= dammage;
 }
 

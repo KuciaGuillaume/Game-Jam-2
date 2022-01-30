@@ -224,4 +224,30 @@ else {
 		room = Menu;
 }
 
+if (mouse_check_button_pressed(mb_left)) {
+	if (global.attack != 1 && global.jump == 0 && global.hell != 1 && alive == 1) {
+		if (global.skin == 25)
+			sprite_index = Player_attack_s;
+		if (global.skin == 50)
+			sprite_index = Player_attack_s50;
+		if (global.skin == 75)
+			sprite_index = Player_attack_s75;
+		if (global.skin == 100)
+			sprite_index = Player_attack_s100;
+		image_index = 0;
+		global.attack = 1;
+	}
+}
+
+
+
+if (mouse_check_button(mb_right) && global.stamina > 0 && global.reset == 0) {
+	global.stamina -= 0.5;
+	image_alpha = 0.3;
+	global.ghostmod = 1;
+} else {
+	image_alpha = 1;
+	global.ghostmod = 0;
+}
+
 

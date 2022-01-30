@@ -45,3 +45,7 @@ global.wolfhp = 50;
 global.skeletonhp = 100;
 global.wolfdammage = 0.2;
 global.skeletondammage = 10;
+//
+global.ghostmod = 0;
+global.stamina = 0;
+global.reset = 0;
